@@ -648,7 +648,7 @@ img {
 /*Intro style start*/
 .intro {
     min-height: 100vh;
-    background: url(./IMG/intro_bg.jpg) no-repeat center;
+    background: url(../IMG/intro_bg.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
     padding-bottom: 223px;
