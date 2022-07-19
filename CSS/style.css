@@ -681,7 +681,7 @@ img {
 
 .search-form_field {
     width: 297px;
-    background: transparent url(/IMG/SVG/circle-ico.svg) no-repeat left 6px;
+    background: transparent url(../IMG/SVG/circle-ico.svg) no-repeat left 6px;
     background-size: 20px;
     border: 0;
     border-bottom: 2px solid #BFC0C5;
@@ -789,14 +789,14 @@ img {
     line-height: 24px;
     color: #a8554f;
     text-decoration: none;
-    background: url(/IMG/SVG/strelka.svg) no-repeat 95% center;
+    background: url(../IMG/SVG/strelka.svg) no-repeat 95% center;
     transition: .2s all;
 
 }
 
 .benefits_card-more:hover,
 .benefits_card-more:focus {
-    background: url(/IMG/SVG/strelka.svg) no-repeat right center;
+    background: url(../IMG/SVG/strelka.svg) no-repeat right center;
 }
 
 /* Benefits style end */
@@ -823,7 +823,7 @@ img {
     font-size: 16px;
     color: #a8554f;
     text-decoration: none;
-    background: url(/IMG/SVG/strelka.svg) no-repeat right center;
+    background: url(../IMG/SVG/strelka.svg) no-repeat right center;
     padding-right: 59px;
 
 }
@@ -944,7 +944,7 @@ img {
     font-size: 16px;
     color: #a8554f;
     text-decoration: none;
-    background: url(/IMG/SVG/strelka.svg) no-repeat right center;
+    background: url(../IMG/SVG/strelka.svg) no-repeat right center;
     padding-right: 59px;
 
 }
@@ -1018,7 +1018,7 @@ img {
     line-height: 24px;
     color: #FFFFFF;
     padding-right: 20px;
-    background: url(/IMG/SVG/heart-ico.svg) no-repeat right;
+    background: url(../IMG/SVG/heart-ico.svg) no-repeat right;
     margin-right: 14px;
 
 }
@@ -1029,7 +1029,7 @@ img {
     line-height: 24px;
     color: #FFFFFF;
     padding-right: 23px;
-    background: url(/IMG/SVG/comment-ico.png)no-repeat right;
+    background: url(../IMG/SVG/comment-ico.png)no-repeat right;
 }
 
 .top_card-desc {
@@ -1306,7 +1306,7 @@ img {
         width: 100%;
         margin-right: 0;
         padding-bottom: 12px;
-        background: transparent url(/IMG/SVG/circle-ico.svg) no-repeat left 2px;
+        background: transparent url(../IMG/SVG/circle-ico.svg) no-repeat left 2px;
     }
 
     .search-form_field::placeholder {
