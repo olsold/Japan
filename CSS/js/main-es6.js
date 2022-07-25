@@ -1,4 +1,4 @@
-console.log('ola');
+console.log('olya');
 (function () {
     const header = document.querySelector('.header');
     window.onscroll = () => {
