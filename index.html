@@ -602,83 +602,8 @@
     </footer>
 <!--      <script src="js/main-es6.js"></script> -->
     <script>
-        
-(function () {
-    const header = document.querySelector('.header');
-    window.onscroll = () => {
-        if (window.pageYOffset > 50) {
-            header.classList.add('header_active');
-        } else {
-            header.classList.remove('header_active');
-        }
-    };
-}());
-
-//burger handler
-(function () {
-    const burgerItem = document.querySelector('.burger');
-    const menu = document.querySelector('.header_nav');
-    const menuCloseItem = document.querySelector('.header_nav-close');
-    const menuLinks = document.querySelectorAll('.header_link');
-    burgerItem.addEventListener('click', () => {
-        menu.classList.add('header_nav_active');
-    });
-    menuCloseItem.addEventListener('click', () => {
-        menu.classList.remove('header_nav_active');
-    });
-    console.log(window.innerWidth);
-    if (window.innerWidth <= 767) {
-        for (let i = 0; i < menuLinks.length; i += 1) {
-            menuLinks[i].addEventListener('click', () => {
-                menu.classList.remove('header_nav_active');
-            });
-
-        }
-    }
-}());
-
-// Scroll to anchors
-(function () {
-
-    const smoothScroll = function (targetEl, duration) {
-        const headerElHeight = document.querySelector('.').clientHeight;
-        let target = document.querySelector(targetEl);
-        let targetPosition = target.getBoundingClientRect().top - headerElHeight;
-        let startPosition = window.pageYOffset;
-        let startTime = null;
-        // регултровать расстояние до блока - наезд header
-
-        const ease = function (t, b, c, d) {
-            t /= d / 2;
-            if (t < 1) return c / 2 * t * t + b;
-            t--;
-            return -c / 2 * (t * (t - 2) - 1) + b;
-        };
-        // как именно анимаируется наш скрол - линейная функция (можно прочитать подробнее)
-
-        const animation = function (currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const run = ease(timeElapsed, startPosition, targetPosition, duration);
-            window.scrollTo(0, run);
-            if (timeElapsed < duration) requestAnimationFrame(animation);
-        };
-        requestAnimationFrame(animation);
-
-    };
-    // функция анимаци 
-
-    const scrollTo = function () {
-        const links = document.querySelectorAll('.js-scroll');
-        links.forEach(each => {
-            each.addEventListener('click', function () {
-                const currentTarget = this.getAttribute('href');
-                smoothScroll(currentTarget, 1000);
-            });
-        });
-    };
-    scrollTo();
-}());
+        !function(){let a=document.querySelector(".header");window.onscroll=()=>{window.pageYOffset>50?a.classList.add("header_active"):a.classList.remove("header_active")}}(),function(){let c=document.querySelector(".burger"),e=document.querySelector(".header_nav"),d=document.querySelector(".header_nav-close"),b=document.querySelectorAll(".header_link");if(c.addEventListener("click",()=>{e.classList.add("header_nav_active")}),d.addEventListener("click",()=>{e.classList.remove("header_nav_active")}),window.innerWidth<=767)for(let a=0;a<b.length;a+=1)b[a].addEventListener("click",()=>{e.classList.remove("header_nav_active")})}(),function(){let a=function(a,d){let b=document.querySelector(".").clientHeight,e=document.querySelector(a).getBoundingClientRect().top-b,f=window.pageYOffset,g=null,c=function(i){var a,b,h,l;null===g&&(g=i);let j=i-g,k=(a=j,b=f,h=e,(a/=d/2)<1?h/2*a*a+b:-h/2*(--a*(a-2)-1)+b);window.scrollTo(0,k),j<d&&requestAnimationFrame(c)};requestAnimationFrame(c)};!function(){let b=document.querySelectorAll(".js-scroll");b.forEach(b=>{b.addEventListener("click",function(){let b=this.getAttribute("href");a(b,1e3)})})}()}()
+  
 // подвешивание обработчика событий на сами ссылки , чтоб срабатывала фунция smoothScroll,которая описана выше )
     </script>
 </body>
